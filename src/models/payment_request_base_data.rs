@@ -30,7 +30,7 @@ pub struct PaymentRequestBaseData {
     pub description: Option<String>,
     /// The expiry date of the payment request
     #[serde(rename = "expiryDate", skip_serializing_if = "Option::is_none")]
-    pub expiry_date: Option<Box<f32>>,
+    pub expiry_date: Option<f32>,
     /// Custom CSS styling for the payment request
     #[serde(rename = "embeddedCSS", skip_serializing_if = "Option::is_none")]
     pub embedded_css: Option<String>,

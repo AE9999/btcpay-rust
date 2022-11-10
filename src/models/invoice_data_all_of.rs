@@ -32,13 +32,13 @@ pub struct InvoiceDataAllOf {
     pub checkout_link: Option<String>,
     /// The creation time of the invoice
     #[serde(rename = "createdTime", skip_serializing_if = "Option::is_none")]
-    pub created_time: Option<Box<f32>>,
+    pub created_time: Option<f32>,
     /// The expiration time of the invoice
     #[serde(rename = "expirationTime", skip_serializing_if = "Option::is_none")]
-    pub expiration_time: Option<Box<f32>>,
+    pub expiration_time: Option<f32>,
     /// The monitoring time of the invoice
     #[serde(rename = "monitoringTime", skip_serializing_if = "Option::is_none")]
-    pub monitoring_time: Option<Box<f32>>,
+    pub monitoring_time: Option<f32>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
     pub status: Option<crate::models::InvoiceStatus>,
     #[serde(rename = "additionalStatus", skip_serializing_if = "Option::is_none")]

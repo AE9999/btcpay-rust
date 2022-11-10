@@ -27,7 +27,7 @@ pub struct ApplicationUserData {
     pub requires_email_confirmation: Option<bool>,
     /// The creation date of the user as a unix timestamp. Null if created before v1.0.5.6
     #[serde(rename = "created", skip_serializing_if = "Option::is_none")]
-    pub created: Option<Box<f32>>,
+    pub created: Option<f32>,
     /// The roles of the user
     #[serde(rename = "roles", skip_serializing_if = "Option::is_none")]
     pub roles: Option<Vec<String>>,

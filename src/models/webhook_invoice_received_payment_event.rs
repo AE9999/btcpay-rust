@@ -10,8 +10,6 @@
 
 /// WebhookInvoiceReceivedPaymentEvent : Callback sent if the `type` is `InvoiceReceivedPayment`
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct WebhookInvoiceReceivedPaymentEvent {
     /// The delivery id of the webhook
@@ -31,7 +29,7 @@ pub struct WebhookInvoiceReceivedPaymentEvent {
     pub _type: Option<String>,
     /// The timestamp when this delivery has been created
     #[serde(rename = "timestamp", skip_serializing_if = "Option::is_none")]
-    pub timestamp: Option<Box<f32>>,
+    pub timestamp: Option<f32>,
     /// The store id of the invoice's event
     #[serde(rename = "storeId", skip_serializing_if = "Option::is_none")]
     pub store_id: Option<String>,
@@ -45,7 +43,7 @@ pub struct WebhookInvoiceReceivedPaymentEvent {
     #[serde(rename = "paymentMethod", skip_serializing_if = "Option::is_none")]
     pub payment_method: Option<String>,
     #[serde(rename = "payment", skip_serializing_if = "Option::is_none")]
-    pub payment: Option<Box<crate::models::Payment>>,
+    pub payment: Option<crate::models::Payment>,
 }
 
 impl WebhookInvoiceReceivedPaymentEvent {

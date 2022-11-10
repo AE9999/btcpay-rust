@@ -29,7 +29,7 @@ pub struct LightningPaymentData {
     pub preimage: Option<String>,
     /// The unix timestamp when the payment got created
     #[serde(rename = "createdAt", skip_serializing_if = "Option::is_none")]
-    pub created_at: Option<Box<f32>>,
+    pub created_at: Option<f32>,
     /// The total amount (including fees) in millisatoshi
     #[serde(rename = "totalAmount", skip_serializing_if = "Option::is_none")]
     pub total_amount: Option<String>,

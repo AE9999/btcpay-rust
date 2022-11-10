@@ -30,7 +30,7 @@ pub struct WebhookEvent {
     pub _type: Option<String>,
     /// The timestamp when this delivery has been created
     #[serde(rename = "timestamp", skip_serializing_if = "Option::is_none")]
-    pub timestamp: Option<Box<f32>>,
+    pub timestamp: Option<f32>,
 }
 
 impl WebhookEvent {

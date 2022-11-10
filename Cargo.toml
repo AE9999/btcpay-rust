@@ -1,8 +1,23 @@
 [package]
-name = "btcpay_rust"
-version = "1.0.0"
-authors = ["OpenAPI Generator team and contributors"]
+name = "btcpay-client"
+version = "0.1.0"
+authors = ["AE"]
 edition = "2018"
+license = "MIT"
+keywords = ["btcpay"]
+description = "A client library for BTCPay Server."
+readme = "README.md"
+repository = "https://github.com/AE9999/btcpay-rust"
+categories = ["rest-client"]
+
+include = [
+    "**/*.rs",
+    "**/*.md",
+    "LICENSE",
+    "README.md",
+    "swagger.json",
+    "Cargo.toml",
+]
 
 [dependencies]
 serde = "^1.0"

@@ -24,7 +24,7 @@ pub struct PaymentRequestDataAllOf {
     pub status: Option<Status>,
     /// The creation date of the payment request
     #[serde(rename = "createdTime", skip_serializing_if = "Option::is_none")]
-    pub created_time: Option<Box<f32>>,
+    pub created_time: Option<f32>,
 }
 
 impl PaymentRequestDataAllOf {

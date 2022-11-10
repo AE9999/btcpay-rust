@@ -18,7 +18,7 @@ pub struct WebhookDeliveryData {
     pub id: Option<String>,
     /// Timestamp of when the delivery got broadcasted
     #[serde(rename = "timestamp", skip_serializing_if = "Option::is_none")]
-    pub timestamp: Option<Box<f32>>,
+    pub timestamp: Option<f32>,
     /// HTTP code received by the remote service, if any.
     #[serde(rename = "httpCode", skip_serializing_if = "Option::is_none")]
     pub http_code: Option<f32>,

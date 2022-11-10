@@ -27,7 +27,7 @@ pub struct OnChainWalletUtxoData {
     pub outpoint: Option<String>,
     /// The time of the utxo
     #[serde(rename = "timestamp", skip_serializing_if = "Option::is_none")]
-    pub timestamp: Option<Box<f32>>,
+    pub timestamp: Option<f32>,
     /// the derivation path in relation to the HD account
     #[serde(rename = "keyPath", skip_serializing_if = "Option::is_none")]
     pub key_path: Option<String>,

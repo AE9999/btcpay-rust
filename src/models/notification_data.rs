@@ -24,7 +24,7 @@ pub struct NotificationData {
     pub link: Option<String>,
     /// The creation time of the notification
     #[serde(rename = "createdTime", skip_serializing_if = "Option::is_none")]
-    pub created_time: Option<Box<f32>>,
+    pub created_time: Option<f32>,
     /// If the notification has been seen by the user
     #[serde(rename = "seen", skip_serializing_if = "Option::is_none")]
     pub seen: Option<bool>,

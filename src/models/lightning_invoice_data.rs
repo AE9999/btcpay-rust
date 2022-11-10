@@ -23,10 +23,10 @@ pub struct LightningInvoiceData {
     pub bolt11: Option<String>,
     /// The unix timestamp when the invoice got paid
     #[serde(rename = "paidAt", skip_serializing_if = "Option::is_none")]
-    pub paid_at: Option<Box<f32>>,
+    pub paid_at: Option<f32>,
     /// The unix timestamp when the invoice expires
     #[serde(rename = "expiresAt", skip_serializing_if = "Option::is_none")]
-    pub expires_at: Option<Box<f32>>,
+    pub expires_at: Option<f32>,
     /// The amount of the invoice in millisatoshi
     #[serde(rename = "amount", skip_serializing_if = "Option::is_none")]
     pub amount: Option<String>,
